@@ -3,20 +3,22 @@
     --secondary: #00f2ff;
     --dark: #080808;
     --card: #121212;
+    --nav-blue: #0051ff; /* Nova variável para o azul da logo */
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 
 body { background-color: var(--dark); color: white; scroll-behavior: smooth; overflow-x: hidden; }
 
+/* Navegação com fundo azul atualizado */
 nav {
     display: flex; justify-content: space-between; align-items: center;
-    padding: 20px 5%; background: rgba(0,0,0,0.95); position: fixed;
-    width: 100%; z-index: 1000; border-bottom: 2px solid var(--primary);
+    padding: 15px 5%; background-color: var(--nav-blue); position: fixed;
+    width: 100%; z-index: 1000; border-bottom: 2px solid var(--secondary);
 }
 
-.logo { font-family: 'Orbitron', sans-serif; font-size: 1.4rem; font-weight: bold; }
-.logo span { color: var(--primary); }
+.logo a { display: flex; align-items: center; }
+.logo-img { height: 50px; width: auto; display: block; }
 
 nav ul { display: flex; list-style: none; gap: 20px; }
 nav a { color: white; text-decoration: none; font-weight: 600; transition: 0.3s; }
@@ -67,6 +69,7 @@ td { padding: 18px; border-bottom: 1px solid #222; text-align: center; font-size
     100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 
-footer { text-align: center; padding: 50px; background: #050505; }
+/* Rodapé também com o azul */
+footer { text-align: center; padding: 50px; background-color: var(--nav-blue); color: white; }
 
 @media (max-width: 768px) { nav ul { display: none; } }
