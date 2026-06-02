@@ -13,12 +13,12 @@ body { background-color: var(--dark); color: white; scroll-behavior: smooth; ove
 /* Navegação com fundo azul atualizado */
 nav {
     display: flex; justify-content: space-between; align-items: center;
-    padding: 15px 5%; background-color: var(--nav-blue); position: fixed;
+    padding: 10px 5%; background-color: var(--nav-blue); position: fixed;
     width: 100%; z-index: 1000; border-bottom: 2px solid var(--secondary);
 }
 
 .logo a { display: flex; align-items: center; }
-.logo-img { height: 50px; width: auto; display: block; }
+.logo-img { height: 75px; width: auto; display: block; }
 
 nav ul { display: flex; list-style: none; gap: 20px; }
 nav a { color: white; text-decoration: none; font-weight: 600; transition: 0.3s; }
